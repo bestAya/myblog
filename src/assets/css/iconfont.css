@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "iconfont";
+    src: url('//at.alicdn.com/t/font_1597875_4ogmv1t1acm.eot?t=1578207491984');
+    /* IE9 */
+    src: url('//at.alicdn.com/t/font_1597875_4ogmv1t1acm.eot?t=1578207491984#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAANYAAsAAAAAB7AAAAMJAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDFIJ0ATYCJAMMCwgABCAFhG0HORu9BsiuMG6xSRWSXNTaJ+VA8j9LFqBweBoP/+33v31m5tncL55MkcQiiq5OUk1ijaQaIh4qEUr+iaZJ8x8458IGVDxrkQ0wqkEeDZJg0X6gAwbQ/3cuA3es5ukLNSBWCFn6C5S+NCNwJ0eg5mbc1ucn/HLG////bt6gu5b3Ah5igaVZBmOCpIPDJfKHSaOrAFXPHRwubYrPsyzAMJSxJo05adCyOKCA9sYosqJ4Poj/ML1qUuCMi+cJVNMo4L7pxRVSUuBpgbjoOYKUKiplIDF0hXbH2iJeibxueqz+8FI9Pn7ZEiWSVobn7r8wZZHRb9Fj+tavHYEQ7O0McDeRsRmgECc6TYdw490MVmNRbjiyrQhpK8c/ipVI2hf9x0tEG47vA6vQl/hWz8gE38aukEAGbTS4L4iPEDvm6UlliPD78av1TRyljVzfH6jNSTbfNxGfl96kJj0hVwtAbq2rA0hvb0gJKaEZgs/XmNcRVwFWiKL8l6kUrEFGvV/NA7zUh8HvP8P55MuXmlWvVbu16xZa729Dbv74dQMZE02Kmhclxe8RB00YKNVrhsK7PleEDhugsOjfPy9e7Kkrw6y2P2ecr5AaqqHx7ccbLh+mNT4fChsekE+xr6yXx9VfBIIPmflUBNv+l6oFrPXEgWW9QqZrdG/IHPwg9sSqknCxOpeIxVhZIDurfPuxqorfkgwjvssl45PdhG6F7ULSMQVZ1yKyYDdDS2MrtHXthGoTcXNjVIuL0sNGEwBhyAWSAZ8hG/JGFuwHWib8oW0oOFQHYnTPxnJ4lb0ahUELDs/Akyq2qdZUdOISOkeh0GWuwq2hTj0HtMVpPTCDMeotFqTHTrsxNthaRTANLsMwVJBo5aM0za4xSX9LUnbdqFmqiFTspSHBQBbgOgMSkhKzRWej0rj/EuQ4EhL0QMWYcg3SUl7vgMfgJiBnRPGkile5pnPM0a5n2EBIUyJAAKNQKKSAunuUD0lGs3iBO9GPJfXCqaLm4yXR8+2CCh+dI0WOon1NS2Vh4QYKLV1CAAAAAA==') format('woff2'), url('//at.alicdn.com/t/font_1597875_4ogmv1t1acm.woff?t=1578207491984') format('woff'), url('//at.alicdn.com/t/font_1597875_4ogmv1t1acm.ttf?t=1578207491984') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('//at.alicdn.com/t/font_1597875_4ogmv1t1acm.svg?t=1578207491984#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-qrcode:before {
+    content: "\e71c";
+}
+
+.icon-search:before {
+    content: "\e741";
+}

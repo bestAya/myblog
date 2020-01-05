@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "SourceHanSansSC";
+    src: url('./assets/font/SourceHanSansSC-Normal.otf');
+}
+
+@font-face {
+    font-family: "SourceHanSansSC-Bold";
+    src: url('./assets/font/SourceHanSansSC-Bold.otf');
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, 'SourceHanSansSC' BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: SourceHanSansSC;
+}
+
+img {
+    border: none;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
