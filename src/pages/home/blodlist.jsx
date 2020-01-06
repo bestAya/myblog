@@ -2,7 +2,7 @@ import React from "react";
 import "./blod.scss";
 function blod() {
   let li = [];
-  for (var i = 0; i < 2; i++) {
+  for (var i = 0; i < 3; i++) {
     li.push(
       <li key={i}>
         <div className="prodimg">
@@ -24,8 +24,21 @@ function blod() {
       </li>
     );
   }
-  // eslint-disable-next-line react/react-in-jsx-scope
-return <ul className="blod">{li}</ul>;
+return<div className="blod_box">
+   <header className="header">
+      <ul className="header-tab">
+        <li className="active">全部</li>
+        <li>关注</li>
+        <li>最新</li>
+        <li>最佳分享</li>
+      </ul>
+      <div className="header-icon">
+        <span className="iconfont icon-search"></span>|
+        <span className="iconfont icon-qrcode"></span>
+      </div>
+    </header>
+    <ul className="blod">{li}</ul>
+</div> ;
 }
 
 export default blod;

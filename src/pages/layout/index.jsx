@@ -1,25 +1,37 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
+import React, { useState } from "react";
+import { Switch, Route, NavLink } from "react-router-dom";
 import "./index.scss";
 import blod from "../home/blodlist";
-function Header() {
-  return (
-    <header className="header">
-      <ul className="header-tab">
-        <li className="active">全部</li>
-        <li>最新</li>
-        <li>最新</li>
-        <li>最佳分享</li>
-      </ul>
-      <div className="header-icon">
-        <span className="iconfont icon-search"></span>|
-        <span className="iconfont icon-qrcode"></span>
-      </div>
-    </header>
-  );
-}
 function Footer() {
-  return <footer className="footer">bar</footer>;
+  let active = {
+    color: '#057bfd',
+  }
+  // console.log(this.props.match)
+  let navlinkActive = useState('/home');
+  return <footer className="footer">
+    <nav>
+      <NavLink className="nav-limk" to="/home" activeStyle={active}>
+        <i className="iconfont icon-faxian"></i>
+        <span>发现</span>
+      </NavLink>
+      <NavLink className="nav-limk" to="/experience" activeStyle={active}>
+        <i className="iconfont icon-book"></i>
+        <span>经验</span>
+      </NavLink>
+      <NavLink className="nav-limk" to="/inspiration" activeStyle={active}>
+        <i className="iconfont icon-quanzi"></i>
+        <span>灵感</span>
+      </NavLink>
+      <NavLink className="nav-limk" to="/news" activeStyle={active}>
+        <i className="iconfont icon-shouye"></i>
+        <span>消息</span>
+      </NavLink>
+      <NavLink className="nav-limk" to="/mine" activeStyle={active}>
+        <i className="iconfont icon-changyongtubiao-xianxingdaochu-zhuanqu-"></i>
+        <span>我的</span>
+      </NavLink>
+    </nav>
+  </footer>;
 }
 function Main() {
   return (
@@ -34,7 +46,6 @@ function Main() {
 function Container() {
   return (
     <div className="Container">
-      <Header></Header>
       <Main></Main>
       <Footer></Footer>
     </div>

@@ -13,8 +13,15 @@ body {
     font-family: -apple-system, 'SourceHanSansSC' BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-overflow-scrolling:touch; 
 }
-
+a{
+    text-decoration: none;
+    color: #000;
+}
+i{
+    font-style: normal;
+}
 * {
     list-style: none;
     margin: 0;
