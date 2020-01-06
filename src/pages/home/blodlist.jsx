@@ -1,6 +1,7 @@
 import React from "react";
+import { Switch, Route, NavLink ,withRouter } from "react-router-dom";
 import "./blod.scss";
-function blod() {
+function blod(props) {
   let li = [];
   for (var i = 0; i < 3; i++) {
     li.push(
@@ -24,6 +25,7 @@ function blod() {
       </li>
     );
   }
+ console.log(props)
 return<div className="blod_box">
    <header className="header">
       <ul className="header-tab">
@@ -41,4 +43,4 @@ return<div className="blod_box">
 </div> ;
 }
 
-export default blod;
+export default withRouter(blod);

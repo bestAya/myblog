@@ -7,7 +7,6 @@ function Footer() {
     color: '#057bfd',
   }
   // console.log(this.props.match)
-  let navlinkActive = useState('/home');
   return <footer className="footer">
     <nav>
       <NavLink className="nav-limk" to="/home" activeStyle={active}>
