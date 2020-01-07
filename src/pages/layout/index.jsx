@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Switch, Route, NavLink } from "react-router-dom";
+import { Switch, Route, NavLink,Redirect  } from "react-router-dom";
 import "./index.scss";
 import blod from "../home/blodlist";
 function Footer() {
   let active = {
     color: '#057bfd',
   }
-  // console.log(this.props.match)
+
   return <footer className="footer">
     <nav>
       <NavLink className="nav-limk" to="/home" activeStyle={active}>

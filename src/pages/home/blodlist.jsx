@@ -1,19 +1,21 @@
-import React from "react";
-import { Switch, Route, NavLink ,withRouter } from "react-router-dom";
+import React, { useState } from "react";
+import { Switch, Route, NavLink, withRouter } from "react-router-dom";
 import "./blod.scss";
-function blod(props) {
+function Blod() {
+  let [flag, setFlag] = useState(false)
   let li = [];
-  for (var i = 0; i < 3; i++) {
+  for (var i =
+    0; i < 3; i++) {
     li.push(
       <li key={i}>
         <div className="prodimg">
           <img src={require("../../assets/img/2910471.jpg")} alt="" />
         </div>
         <div className="blod_cent">
-          <span>lol动画平台</span>
+          <span>lol动画平台奥斯卡登记卡时间的</span>
           <i></i>
         </div>
-        <div className="blod_avater">
+        {!flag ? <div className="blod_avater">
           <div className="blod_message">
             <img src={require("../../assets/img/1001779.jpg")} alt="" />
             <span>小囖咯</span>
@@ -21,26 +23,46 @@ function blod(props) {
             <em></em>
           </div>
           <p>11点赞·22评论·2分钟前</p>
-        </div>
+        </div> : <div className="blod_avater">
+            <div className="blod_avater_top">
+              <p>11点赞·22评论</p>
+              <span>#原创#</span>
+            </div>
+            <div className="blod_avater_foot">
+              <div className="blod_message">
+                <img src={require("../../assets/img/1001779.jpg")} alt="" />
+                <span>小囖咯</span>
+              </div>
+              <span>1分钟</span>
+            </div>
+
+          </div>}
+
+
       </li>
     );
   }
- console.log(props)
-return<div className="blod_box">
-   <header className="header">
-      <ul className="header-tab">
-        <li className="active">全部</li>
-        <li>关注</li>
-        <li>最新</li>
-        <li>最佳分享</li>
-      </ul>
+  let activeFlag = ()=>{
+    setFlag(!flag)
+  };
+  // console.log(listFlag)
+  return (<div className="blod_box">
+    <header className="header">
+      <nav className="header-tab">
+        <NavLink className="Navlink " exact to="/home/1" activeclassName='active'>全部</NavLink>
+        <NavLink className="Navlink " exact to="/home/2" activeclassName='active'>关注</NavLink>
+        <NavLink className="Navlink " exact to="/home/3" activeclassName='active'>最新</NavLink>
+        <NavLink className="Navlink " exact to="/home/4" activeclassName='active'>最佳分享</NavLink>
+      </nav>
       <div className="header-icon">
         <span className="iconfont icon-search"></span>|
-        <span className="iconfont icon-qrcode"></span>
+      <span className={ flag ? 'iconfont icon-manage' :'iconfont icon-qrcode'} onClick={activeFlag}></span>
       </div>
     </header>
-    <ul className="blod">{li}</ul>
-</div> ;
+    <div className="blod-list">
+      <ul className={ flag ? 'activeBlog': 'blod' }>{li}</ul>
+    </div>
+  </div>)
 }
 
-export default withRouter(blod);
+export default withRouter(Blod);
